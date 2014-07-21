@@ -1,0 +1,10 @@
+yum install vixie-cron
+yum install crontabs
+/sbin/service crond start
+/sbin/service crond stop
+/sbin/service crond reload
+service crond status
+
+/etc/rc.d/init.d/crond start
+
+crontab -e
