@@ -10,6 +10,7 @@ yum install php-mbstring
 yum -y install php-ssl
 
 cd /tmp
+wget http://museum.php.net/php5/php-5.2.17.tar.gz
 wget http://at1.php.net/distributions/php-5.4.29.tar.gz
 tar -vxzf php-5.4.29.tar.gz
 cd php-5.4.29

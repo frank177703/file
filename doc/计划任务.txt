@@ -8,3 +8,5 @@ service crond status
 /etc/rc.d/init.d/crond start
 
 crontab -e
+
+4,9,14,19,24,29,34,39,44,49,54,59 * * * * /usr/local/php/bin/php /data/www/test.fy88.com/cli/ALL.php
