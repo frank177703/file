@@ -127,7 +127,14 @@ make && make install
 vi /usr/local/php/etc/php.ini
 extension=memcache.so
 
-
+#更新curl  curl和ssl冲突，版本太低
+cd /tmp
+wget wget http://curl.haxx.se/download/curl-7.35.0.tar.gz
+tar -zvxf curl-7.35.0.tar.gz
+cd curl-7.35.0
+/usr/local/php/bin/phpize
+./configure --with-php-config=/usr/local/php/bin/php-config --enable-curl
+make && make install
 
 display_errors=Off
 

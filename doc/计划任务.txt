@@ -1,6 +1,7 @@
 yum install vixie-cron
 yum install crontabs
 /sbin/service crond start
+/sbin/service crond restart
 /sbin/service crond stop
 /sbin/service crond reload
 service crond status
@@ -10,3 +11,6 @@ service crond status
 crontab -e
 
 4,9,14,19,24,29,34,39,44,49,54,59 * * * * /usr/local/php/bin/php /data/www/test.fy88.com/cli/ALL.php
+
+/usr/local/php/bin/php /data/www/bonus/cli/ALL.php
+
